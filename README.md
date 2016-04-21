@@ -6,9 +6,8 @@ This is a script for fixing LP: #1459033 on environments prior to 1.25.2
 
 ```shell
 $ juju ssh 0
-machine-0 $ sudo apt-get install git-core 
-machine-0 $ curl https://github.com/niedbalski/raw/run-fix-1459033 && chmod 0755 
-machine-0 $ sudo ./run-fix-1459033
+machine-0 $ wget https://github.com/niedbalski/fix-1459033/blob/master/run-fix-1459033 
+machine-0 $ sudo chmod 0755 ./run-fix-1459033 && ./run-fix-1450933
 ```
 
 Expected Output:
